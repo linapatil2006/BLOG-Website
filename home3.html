@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adma-College-Univercity-Html_Template</title>
+
+     <!-- icon  -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
+     <!-- cs link  -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="home3style.css">
+ 
+     <!-- bootstrap link  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+     <!-- header -->
+    
+     <div id="head" class="header">
+        <div class="row1">
+          <p><ion-icon id="icon" name="call"></ion-icon>  9675843526  |</p>
+          <p><ion-icon id="icon" name="mail-unread"></ion-icon>  Adma@gmail.com  |</p>
+        </div>
+      
+        <div class="row1">
+      
+          <p>Faculty |</p>
+          <p>Comunity |</p>
+          <p>Login |</p>
+          <p>Register |</p>
+
+          <h3><ion-icon name="logo-facebook"></ion-icon></h3>
+          <h3><ion-icon name="logo-instagram"></ion-icon></h3>
+          <h3><ion-icon name="logo-pinterest"></ion-icon></h3>
+          <h3><ion-icon name="logo-twitter"></ion-icon></h3>
+        </div>
+      </div>
+
+
+<!-- sidebar  -->
+
+    <nav class="navbar bg-body-tertiary" id="sidebar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="black-logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="black-logo.png" alt=""></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvas">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" >
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home-One</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="home2.html">Home-Two</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="home3.html">Home-Three</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="univercity.html">Univercity Overview</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="register.html">Register Now</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="login.html">Log in Now</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="application.html">Application Form</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="privacy.html">Privacy Plicy</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Admission
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="apply.html">How To Apply</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Health & Care
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="fitness.html">Fitness & Athletics</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Student Life
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="univercity.html">Univercity Life</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="contact.html" role="button" aria-expanded="false">
+                Contact Us
+              </a>
+            </li>
+
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+<!-- navbar  -->
+
+    <div id="menu" class="menu-bar">
+            <img src="white-logo.png" alt="">
+
+            <ul>
+                <li><a href="home-one">Home<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <div id="dm" class="dropdown-menu">
+                        <ul>
+                            <li><a href="index.html">Home- One</a></li>
+                            <li><a href="home2.html">Home- Two</a></li>
+                            <li><a href="home3.html">Home- Three</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Pages<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <div id="dm" class="dropdown-menu">
+                        <ul>
+                            <li><a href="univercity.html">Univercity Overview</a></li>
+                            <li><a href="register.html">Register Now</a></li>
+                            <li><a href="login.html">Login Now</a></li>
+                            <li><a href="application.html">Aplication Form</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>            
+                </li>
+                <li><a href="#">Admission<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <div id="dm" class="dropdown-menu">
+                        <ul>
+                            <li><a href="apply.html">How To Apply</a></li>
+                        </ul>
+                    </div> 
+                </li>
+                <li><a href="#">Health Care<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <div id="dm" class="dropdown-menu">
+                        <ul>
+                            <li><a href="fitness.html">Fitness & Athletics</a></li>
+                        </ul>
+                    </div> 
+                </li>
+                <li><a href="#">Student Life<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <div id="dm" class="dropdown-menu">
+                        <ul>
+                            <li><a href="univercity.html">Univercity Life</a></li>
+                        </ul>
+                    </div> 
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                  <div id="div-icon">
+                    <a href="application.html"><ion-icon name="arrow-redo"></ion-icon></a>
+                    <span id="sp">Application form</span>
+                  </div>
+                 
+                </li>
+            </ul>
+    </div>
+
+    <!-- main-page   -->
+  <div class="main">
+      <div class="main-img">
+          <img id="big1" src="banner-wrap-1.png" alt="">
+          <img id="round1" src="banner-wrap-city-2.png" alt="">
+          <img id="round2" src="banner-wrap-city.png" alt="">
+      </div>
+      <div class="main-info">
+          <p>The Best University In The NY City Since<span> 1996</span></p>
+          <h1>Build Your<br> Career At Adma</h1>
+          <p>We are a Top 06 Canadian university and one of the Top 120 in the world. Find out what makes our student experience so rich.</p>
+          
+          <div class="rol">
+              <button>Univercity Overview <ion-icon name="arrow-forward-outline"></ion-icon></button>
+              <p id="play"><a href="#"><ion-icon name="play"></ion-icon></a></p>
+              <a href="#">See how to apply <ion-icon name="arrow-forward-outline"></ion-icon></a>
+          </div>
+          <div class="rol2">
+              <div id="control">
+                <img src="testimonial-4.jpg" alt="">
+                <img src="testimonial-5.jpg" alt="">
+                <img src="testimonial-6.jpg" alt="">
+              </div>
+
+              <div id="control2">
+                <h6>Student around in the . <br>
+                    <span style="font-size: 25px;font-weight: 600;color: rgb(7, 7, 86);">91313+</span></h4>
+              </div>
+          </div>
+            <img id="round3" src="banner-wrap-city-3.png" alt="">
+      </div>
+  </div>
+
+    <!-- slide -->
+    <div class="slide-items">
+ 
+      <div class="slider">
+           <!-- 9 slides  -->
+            <div class="slide">
+                <img src="partner-1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="partner-2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="partner-3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="partner-4.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="partner-1.png" alt="">
+            </div>
+            <div class="partner-2">
+                <img src="" alt="">
+            </div>
+            <div class="slide">
+                <img src="partner-3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="partner-4.png" alt="">
+            </div>
+            <!-- something -->
+            <div class="slide">
+              <img src="partner-1.png" alt="">
+          </div>
+          <div class="slide">
+              <img src="partner-2.png" alt="">
+          </div>
+          <div class="slide">
+              <img src="partner-3.png" alt="">
+          </div>
+          <div class="slide">
+              <img src="partner-4.png" alt="">
+          </div>
+          <div class="slide">
+              <img src="partner-1.png" alt="">
+          </div>
+          <div class="partner-2">
+              <img src="" alt="">
+          </div>
+          <div class="slide">
+              <img src="partner-3.png" alt="">
+          </div>
+          <div class="slide">
+              <img src="partner-4.png" alt="">
+          </div>
+    
+      </div>
+    </div> 
+
+    <!-- about  -->
+     <div class="about">
+       <div class="about-div">
+            <h1><img src="title-shape.svg" alt="">About Adma University</h1>
+            <p>At Adma, we believe in providing an exceptional educational experienc that prepares students for success in an ever-changing world. As a leading institution of higher learning,</p>
+            <div class="about-info">
+              <div class="info">
+                <h6><ion-icon name="earth"></ion-icon>Our Mission</h6>
+                <p>we strive to provide a transformative and enriching educational user and experience for our students & stay the best facitilies.</p>
+                <a href="#">Univercity Overview  <ion-icon name="arrow-forward-outline"></ion-icon></a>
+              </div>
+              <div class="info">
+                <h6><ion-icon name="school"></ion-icon>Our History</h6>
+                <p>Diversity and inclusivity are integral to our university's ethos. We celebrate the richness of our multicultural.</p>
+                <a href="#">View Our Program  <ion-icon name="arrow-forward-outline"></ion-icon></a>
+              </div>
+            </div>
+       </div>
+       <div class="ab-img">
+          <img src="shape-3.png" alt="">
+       </div>
+       <div class="about-img">
+          <img src="about-2.jpg" alt="">
+       </div>
+     </div>
+
+     <!-- vidio -->
+      <div class="vid">
+          <div class="h1-but">            
+            <h1>How To Apply At Adma </h1>
+            <button>Get Started Now<ion-icon name="arrow-forward-outline"></ion-icon></button>
+          </div>
+         
+          <div class="vid-div">
+              <div class="v1">
+                <ion-icon name="book"></ion-icon><span id="w">01</span>
+                <h6>Complete Application Form</h6>
+                <p>Furthermore, our university camp provide a vibrant & supportive community that embraces diversity.</p>
+              </div>
+              <div class="v1">
+                <ion-icon name="chatbox-ellipses"></ion-icon><span id="w">02</span>
+                <h6>Application Review</h6>
+                <p>We believe that a diverse student body enhances learning experience & prepares students to thrive in a globalized world.</p>
+              </div>
+              <div class="v1">
+                <ion-icon name="diamond"></ion-icon><span id="w">03</span>
+                <h6>Payment of Fees</h6>
+                <p>As student at Adma, you will have access to state-of-the-art facilities, cutting edge research laboratories, & an extensive.</p>
+              </div>
+          </div>
+
+          <!-- vidio-img  -->
+        <div class="vidio">
+          <center><p id="play"><a href="#"><ion-icon name="play"></ion-icon></a></p></center>
+        </div>
+
+          <!-- student  -->
+           <div class="student">
+                <div class="stud-img">
+                    <img src="student-1.png" alt="">
+                </div>
+                <div class="stud-div">
+                      <ul>
+                          <li><a href="#">Atletics & Fitness <ion-icon name="arrow-forward-outline"></ion-icon></a></li>
+                          <li><a href="#">Support & Guidance <ion-icon name="arrow-forward-outline"></ion-icon></a></li>
+                          <li><a href="#">Student Activities <ion-icon name="arrow-forward-outline"></ion-icon></a></li>
+                          <li><a href="#">Camppus Life <ion-icon name="arrow-forward-outline"></ion-icon></a></li>
+                      </ul>
+                </div>
+                <div class="stud-info">
+                    <h1>Student Life At Adma</h3>
+                    <p>We are proud of our alumni network, which spans across industries and continents. Our graduates are equipped with the skills, values knowledge, anda to excel in their chosen fields and make positive impact on society.</p>
+                    <p>Our graduates are equipped with the skills, values knowledge, anda to excel in their chosen fields and make positive.</p>
+                    <button>Application Form <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                </div>
+           </div>
+
+           <!-- counter -->
+            <div class="number">
+                 <div class="counter">
+                    <h1><ion-icon name="school"></ion-icon>
+                        <span id="count7"></span>
+                        <span>+</span>
+                      </h1>
+                    <p>Online Programs</p>
+                 </div>
+                 <div class="counter">
+                  <h1><ion-icon name="book"></ion-icon>
+                      <span id="count8"></span>
+                      <span>+</span>
+                    </h1>
+                  <p>Graduate Programs</p>
+              </div>
+              <div class="counter">
+                <h1><ion-icon name="color-filter"></ion-icon>
+                    <span id="count9"></span>
+                    <span>+</span>
+                  </h1>
+                <p>The best Courses</p>
+            </div>
+              <div class="counter">
+                <h1><ion-icon name="ribbon"></ion-icon>
+                    <span id="count10"></span>
+                    <span>+</span>
+                  </h1>
+                <p>Professional Teachers</p>
+             </div>
+            </div>
+
+            <!-- choos  -->
+             <div class="choos">
+                <div class="choos-info">
+                  <h1>Why Choose Adma</h1>
+                  <p>At Adma, we believe in providing an exceptional educational experienc that prepares students for success in an ever-changing world. As a leading institution of higher learning,</p>
+                  <p>we are committed to fostering a vibrant academic community and empowering our students to reach their full potential.</p>
+                    <a href="#">Univercity Overview  <ion-icon name="arrow-forward-outline"></ion-icon></a>
+
+                    <div class="co">
+                            <div class="counter">
+                              <h1><ion-icon name="medal"></ion-icon>
+                                  <span id="count11"></span>
+                                  <span>+</span>
+                                </h1>
+                              <p>We Have The Best Courses</p>
+                          </div>
+                          <div class="counter">
+                            <h1><ion-icon name="paper-plane"></ion-icon>
+                          
+                              <span id="count12"></span>
+                                <span>+</span>
+                              </h1>
+                            <p>Our Graduate Programs</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="choos-img">
+                    <img src="choose-1.png" alt="">
+                    <div class="para">
+                        <p>“Research-intensive universities may have specialized research centers and institutes for various disciplines”.</p>
+                    </div>
+                </div>
+             </div>
+
+             <!-- facilities  -->
+              <div class="facility">
+                    <div class="fas-img">
+                        <img id="f-im" src="facilities-3.png" alt="">
+                        <img id="yellow" src="shape-4.png" alt="">
+                        <img id="none" src="facilities-4.png" alt="">
+                    </div>
+                    <div class="fas-info">
+                        <h1>Our Campus Has Best Facilities For Our Students</h1>
+                        <p>We are proud of our alumni network, which spans across industries and continents. Our graduates are equipped with the skills, values knowledge, anda to excel in their chosen fields and make positive impact on society. As a Adma graduate.</p>
+                          <h6><span>01</span>Best Computer Labs</h6>
+                        <p>Computer labs equipped with computers, printers, and software are available for students to work on assignments.</p>
+                          <h6><span>02</span>Performing Arts Centers</h6>
+                        <p>Universities with performing arts programs often have dedicated facilities such as theaters, concert halls, and rehearsal spaces.</p>
+                            <button>Application Form <ion-icon name="arrow-forward-outline"></ion-icon></button>
+
+                    </div>
+              </div>
+
+              <!-- news  -->
+               <div class="news">
+                  <div class="news-info">
+                      <h1>Are You Ready To Build Up Your Career</h1>
+                      <p>We are proud of our alumni network, which spans across industries and continents. Our graduates are equipped with the skills, values knowledge, anda to excel in their chosen fields and make positive impact on society.</p>
+                      <div class="but">
+                        <button>Application Form <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        <a href="#">How To apply  <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                      </div>    
+                  </div>
+                  <div class="rela">
+                    <h6>Subscribe To Our Newsletter.</h6>
+                    <p>Stay up-to-date with the latest news, trends, Stay informed about the latest developments, breakthroughs, and trends in our industry. the web to bring you the most relevant and engaging news articles.</p>
+                    <input type="email" placeholder="Your email">
+                    <button>Subscribe Now <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                </div>
+               </div>
+      </div>
+
+         <!-- arrow-up -->
+         <div class="arr" id="arr">
+              <a href="#head"><ion-icon name="arrow-up-sharp"></ion-icon></a>
+          </div>
+          
+               <!-- new-div -->
+                <h1 id="newh1">See Our Latest News</h1>
+                <div class="news-div">
+                    <div class="new1">
+                        <img src="blog-1.jpg" alt="">
+                        <a href="#">$165-million of Adma's inclusive genomics and RNA Research Program</a>
+                        <p><span><ion-icon name="calendar-outline"></ion-icon></span>October 08, 2024 <span><ion-icon name="person-outline"></ion-icon></span> William Cambel</p>
+                        <div id="one">Education</div>
+                    </div>
+                    <div class="new2">
+                        <img src="blog-2.jpg" alt="">
+                        <a href="#">UBC professor is sppining the stuff of electric dreams in the Adma univercity.</a>
+                        <p><span><ion-icon name="calendar-outline"></ion-icon></span>October 08, 2024 <span><ion-icon name="person-outline"></ion-icon></span> John Smith</p>
+                        <div id="one">Science</div>
+
+                    </div>
+                    <div class="new3">
+                        <img src="blog-3.jpg" alt="">
+                        <a href="#">Unlocking the potential of peer support to improve men's mental health.</a>
+                        <p><span><ion-icon name="calendar-outline"></ion-icon></span>October 08, 2024 <span><ion-icon name="person-outline"></ion-icon></span> William Cambel</p>
+                        <div id="one">Technology</div>
+
+                    </div>
+                </div>
+     
+
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="cont">
+            <h5>About Adma</h5>
+            <p>We are a Top 06 Canadian university and one of the Top 20 in the world. Find out which that make our student.</p>
+            <h5>Follow Adma</h5>
+
+            <ul id="icon3">
+                <li><a href="#"><ion-icon id="icon" name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon id="icon" name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon id="icon" name="logo-pinterest"></ion-icon></a></li>
+                <li><a href="#"><ion-icon id="icon" name="logo-twitter"></ion-icon></a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h5>Academics</h5>
+
+            <ul>
+                <li><a href="#">Undergraduates</a></li>
+                <li><a href="#">Univercity Overview</a></li>
+                <li><a href="#">Online Eduaction</a></li>
+                <li><a href="#">How To Apply</a></li>
+                <li><a href="#">Graduates</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h5>Quick Links</h5>
+
+            <ul>
+                <li><a href="#">Student Activity</a></li>
+                <li><a href="#">Apply Form</a></li>
+                <li><a href="#">Scedual a Tour</a></li>
+                <li><a href="#">News & Blogs</a></li>
+                <li><a href="#">About Adma</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h5>Contact Us</h5>
+
+            <ul>
+                <li><a href="#"><ion-icon id="icon" name="call"></ion-icon>+453 674 7896</a></li>
+                <li><a href="#"><ion-icon id="icon" name="mail-unread"></ion-icon>@Adma45gmail.com</a></li>
+                <li><a href="#"><ion-icon id="icon" name="mail-unread"></ion-icon>@helloAdma.com</a></li>
+                <li id="display"><ion-icon id="icon" name="person-add-outline"></ion-icon>3001810 Campus Way IUTothell WA 98011-8246</li>
+            </ul>
+        </div>
+        
+        <div class="cont3">
+          <h5>Mobile App</h5>
+  
+          <a href="#"><div class="small1">
+              <div class="small1-icon">
+                  <ion-icon name="logo-google-playstore"></ion-icon>
+              </div>
+              <div class="small1-text">
+                  <h6><span>Download</span></h6>
+                  <h6>Play Store</h6>
+              </div>
+          </div></a>
+  
+          <a href="#"><div class="small2">
+              <div class="small2-icon">
+                  <ion-icon name="logo-google-playstore"></ion-icon>
+              </div>
+              <div class="small2-text">
+                  <h6><span>Download</span></h6>
+                  <h6>Play Store</h6>
+              </div>
+          </div></a>
+     </div>
+  </div>
+ 
+  <!-- footer -->
+  <footer>
+    <div class="adma">
+        <img src="black-logo.png" alt="">
+    </div>
+    <div class="text">
+        <p>© Lina Ganesh Patil.</p>
+    </div>
+    <div class="text2">
+        <ul>
+          <a href="#"><li>Student</li></a>
+          <a href="#"><li>Faculty</li></a>
+          <a href="#"><li>Research</li></a>
+          <a href="#"><li>Comunity</li></a>
+        </ul>
+    </div>
+</footer>
+
+   <!-- js -->
+    <script src="script.js"></script>
+  <!-- bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+     
