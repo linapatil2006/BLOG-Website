@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+<h3 class="text-uppercase text-warning" style="letter-spacing: 2px;">Category - {{ keyword }}</h3>
+
+  <main role="main" class="container p-0">
+    <div class="row">
+      <div class="col-md-8 blog-main">
+        {% for b in blog %}
+        <div class="card border-0" >
+          <div class="card-body">
+            <h3><a style="text-decoration: none;" href="{% url 'blogs' b.slug %}">{{ b.title }}</a></h3>
+            <small class="mb-1 text-muted">{{ b.created_at | timesince }} ago | {{ b.author }}</small>
+            <p class="card-text">{{ b.short_desc | truncatewords:20 }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <!-- /.blog-main -->
+
+
+    </div><!-- /.row -->
+
+  </main><!-- /.container -->
+
+
+{% endblock %}

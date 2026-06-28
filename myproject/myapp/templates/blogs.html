@@ -1,0 +1,97 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <!-- Page content-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">{{ single_post.title }}</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on {{ single_post.created_at }} by {{ single_post.author }}</div>
+                    <!-- Post category-->
+                    <a class="badge bg-warning text-decoration-none text-light" href="#!">{{single_post.category }}</a>
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4"><img class="img-fluid rounded" src="{{ single_post.blog_image.url }}" alt="..." /></figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                    <p class="fs-5 mb-4">{{ single_post.short_desc }}</p>
+                    <p class="fs-5 mb-4">{{ single_post.blog_body }}</p>
+                
+                    <hr>
+
+                    <h4 style="font-family: popins;" class="text-warning">Comments</h4>
+                    {% if comment %}
+                        <p>{{ comment_count }} comments</p>
+                        {% for coment in comment %}
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text mb-0">
+                                    {{ coment }}
+                                </p>
+                                <span>
+                                    <small>by {{ coment.user }}</small>
+                                    <small>{{ coment.created_at | timesince }} ago</small>
+                                </span>
+                                
+                            </div>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                    <p>No comments<p>
+                    {% endif %}
+
+                    <div class="form-group">
+                        {% if user.is_authenticated %}
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <textarea name="comment" class="form-control mt-2" placeholder="write your comment"></textarea>
+                                <input type="submit" class="btn btn-primary mt-2">
+                            </div>
+                        </form>
+                        {% else %}
+                        <p>Please <span><a href="{% url 'login' %}" style="color: red;text-decoration: none;">Login</a></span> to comment</p>
+                        {% endif %}
+                    </div>
+                    </section>
+            </article>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+           
+            <!-- Categories widget-->
+            <div class="card mb-4 p-3">
+                <h4 class="font-italic">Categories</h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                {% for cat in categories %}
+                                <li><a href="{% url 'posts_by_category' cat.id %}">{{ cat.category_name}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4 p-3">
+                <h4 class="font-italic">Follow Us</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}
